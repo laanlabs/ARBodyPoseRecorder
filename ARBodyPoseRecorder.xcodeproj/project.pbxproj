@@ -26,6 +26,7 @@
 		427EB9AF243BBF680040D424 /* SKLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB9A0243BBF680040D424 /* SKLine.swift */; };
 		427EB9B0243BBF680040D424 /* SCNVector4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB9A1243BBF680040D424 /* SCNVector4+Extensions.swift */; };
 		427EB9B1243BBF680040D424 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB9A2243BBF680040D424 /* SCNNode+Extensions.swift */; };
+		427EB9B4243BCF470040D424 /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 427EB9B3243BCF460040D424 /* robot.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		427EB9A0243BBF680040D424 /* SKLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLine.swift; sourceTree = "<group>"; };
 		427EB9A1243BBF680040D424 /* SCNVector4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector4+Extensions.swift"; sourceTree = "<group>"; };
 		427EB9A2243BBF680040D424 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		427EB9B3243BCF460040D424 /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				427EB977243BAA2D0040D424 /* VideoRecorder.swift */,
 				427EB992243BBF680040D424 /* SceneKit */,
 				427EB969243BAA120040D424 /* Main.storyboard */,
+				427EB9B2243BCF460040D424 /* character */,
 				427EB96C243BAA150040D424 /* Assets.xcassets */,
 				427EB96E243BAA150040D424 /* LaunchScreen.storyboard */,
 				427EB971243BAA150040D424 /* Info.plist */,
@@ -112,6 +115,14 @@
 				427EB9A2243BBF680040D424 /* SCNNode+Extensions.swift */,
 			);
 			path = SceneKit;
+			sourceTree = "<group>";
+		};
+		427EB9B2243BCF460040D424 /* character */ = {
+			isa = PBXGroup;
+			children = (
+				427EB9B3243BCF460040D424 /* robot.usdz */,
+			);
+			path = character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427EB9B4243BCF470040D424 /* robot.usdz in Resources */,
 				427EB970243BAA150040D424 /* LaunchScreen.storyboard in Resources */,
 				427EB96D243BAA150040D424 /* Assets.xcassets in Resources */,
 				427EB96B243BAA120040D424 /* Main.storyboard in Resources */,

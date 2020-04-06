@@ -9,6 +9,7 @@
 import UIKit
 import SceneKit
 import ARKit
+import SceneKit.ModelIO
 
 class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, RecorderDelegate {
     
@@ -66,6 +67,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Re
         self.sceneView.addSubview(recordButton)
         recordButton.addTarget(self, action: #selector(recordButtonTapped), for: .touchUpInside)
         
+        DispatchQueue.global().async {
+            self.loadRobot()
+        }
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -102,6 +108,29 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Re
     
     override func viewDidLayoutSubviews() {
         self.recordButton.center = .init(x: self.view.bounds.width * 0.5, y: self.view.bounds.height - 90 )
+    }
+    
+    // MARK: -
+    
+    var characterNode : SCNNode!
+    var characterRoot : SCNNode!
+    
+    func loadRobot() {
+        
+        guard let url = Bundle.main.url(forResource: "robot", withExtension: "usdz") else { fatalError() }
+        
+        let scene = try! SCNScene(url: url, options: [.checkConsistency: true])
+
+        characterNode = scene.rootNode
+        
+        let shapeParent = characterNode.childNode(withName: "biped_robot_ace_skeleton", recursively: true)!
+        
+        // Hierarchy is a bit odd, two 'root' names. Taking the second one
+        characterRoot = shapeParent.childNode(withName: "root", recursively: false)?.childNode(withName: "root", recursively: false)
+        
+        self.sceneView.scene.rootNode.addChildNode(characterNode)
+        
+        
     }
     
     @objc func recordButtonTapped() {
@@ -330,6 +359,19 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Re
              
             //let bodyPosition = simd_make_float3(bodyAnchor.transform.columns.3)
             
+            // Update Robot Character
+            characterRoot.transform = SCNMatrix4.init(bodyAnchor.transform)
+            
+            for joint in ARBodyUtils.allJoints {
+                if let childNode = characterRoot.childNode(withName: joint.rawValue, recursively: true) {
+                    if let transform = bodyAnchor.skeleton.localTransform(for: joint) {
+                        childNode.transform = SCNMatrix4.init(transform)
+                    }
+                }
+            }
+            
+            
+            // -
             parentNode.transform = SCNMatrix4.init(bodyAnchor.transform)
             
             let joints = ARBodyUtils.selectedJointNames
