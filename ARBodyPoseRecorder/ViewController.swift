@@ -342,15 +342,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Re
                  
                  for  i in 0..<joints.count {
                      
-//                    let boxSize : CGFloat = 0.05
-//                    let sphereNode = SCNNode(geometry:
-//                        SCNBox(width: boxSize*2.4, height: boxSize, length: boxSize, chamferRadius: 0) )
-//
-//                    sphereNode.geometry?.firstMaterial?.diffuse.contents =
-//                        ARBodyUtils.colorForJointName(joints[i].rawValue)
+                    let boxSize : CGFloat = 0.06
+                    let sphereNode = SCNNode(geometry:
+                        SCNBox(width: boxSize*1.9, height: boxSize, length: boxSize, chamferRadius: 0) )
+
+                    sphereNode.geometry?.firstMaterial?.diffuse.contents =
+                        ARBodyUtils.colorForJointName(joints[i].rawValue)
                     
-                    let sphereNode = SCNNode()
-                    sphereNode.showAxes(radius: 0.0085, height: 0.13)
+                    //let sphereNode = SCNNode()
+                    sphereNode.showAxes(radius: 0.0085, height: 0.15)
                     
                      parentNode.addChildNode(sphereNode)
                      sphereNodes.append(sphereNode)
