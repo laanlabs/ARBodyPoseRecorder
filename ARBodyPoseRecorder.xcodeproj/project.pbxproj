@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		427EB964243BAA120040D424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB963243BAA120040D424 /* AppDelegate.swift */; };
-		427EB966243BAA120040D424 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 427EB965243BAA120040D424 /* art.scnassets */; };
 		427EB968243BAA120040D424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB967243BAA120040D424 /* ViewController.swift */; };
 		427EB96B243BAA120040D424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427EB969243BAA120040D424 /* Main.storyboard */; };
 		427EB96D243BAA150040D424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427EB96C243BAA150040D424 /* Assets.xcassets */; };
 		427EB970243BAA150040D424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427EB96E243BAA150040D424 /* LaunchScreen.storyboard */; };
+		427EB978243BAA2D0040D424 /* VideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB977243BAA2D0040D424 /* VideoRecorder.swift */; };
+		427EB97A243BAB520040D424 /* ARBodyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB979243BAB520040D424 /* ARBodyUtils.swift */; };
+		427EB9A4243BBF680040D424 /* ProjectionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB994243BBF680040D424 /* ProjectionUtils.swift */; };
+		427EB9A5243BBF680040D424 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB995243BBF680040D424 /* SCNVector3+Extensions.swift */; };
+		427EB9A7243BBF680040D424 /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB997243BBF680040D424 /* float4x4+Extensions.swift */; };
+		427EB9A8243BBF680040D424 /* CG+Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB998243BBF680040D424 /* CG+Arithmetic.swift */; };
+		427EB9A9243BBF680040D424 /* ARPointCloudSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB999243BBF680040D424 /* ARPointCloudSimple.swift */; };
+		427EB9AA243BBF680040D424 /* UsefulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB99A243BBF680040D424 /* UsefulExtensions.swift */; };
+		427EB9AB243BBF680040D424 /* SCNPointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB99B243BBF680040D424 /* SCNPointCloud.swift */; };
+		427EB9AC243BBF680040D424 /* AxisGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB99C243BBF680040D424 /* AxisGrid.swift */; };
+		427EB9AD243BBF680040D424 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB99D243BBF680040D424 /* Haptics.swift */; };
+		427EB9AF243BBF680040D424 /* SKLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB9A0243BBF680040D424 /* SKLine.swift */; };
+		427EB9B0243BBF680040D424 /* SCNVector4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB9A1243BBF680040D424 /* SCNVector4+Extensions.swift */; };
+		427EB9B1243BBF680040D424 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EB9A2243BBF680040D424 /* SCNNode+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		427EB960243BAA120040D424 /* ARBodyPoseRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBodyPoseRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427EB963243BAA120040D424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		427EB965243BAA120040D424 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		427EB967243BAA120040D424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		427EB96A243BAA120040D424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		427EB96C243BAA150040D424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427EB96F243BAA150040D424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427EB971243BAA150040D424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427EB977243BAA2D0040D424 /* VideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorder.swift; sourceTree = "<group>"; };
+		427EB979243BAB520040D424 /* ARBodyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBodyUtils.swift; sourceTree = "<group>"; };
+		427EB994243BBF680040D424 /* ProjectionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionUtils.swift; sourceTree = "<group>"; };
+		427EB995243BBF680040D424 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		427EB997243BBF680040D424 /* float4x4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
+		427EB998243BBF680040D424 /* CG+Arithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CG+Arithmetic.swift"; sourceTree = "<group>"; };
+		427EB999243BBF680040D424 /* ARPointCloudSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPointCloudSimple.swift; sourceTree = "<group>"; };
+		427EB99A243BBF680040D424 /* UsefulExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsefulExtensions.swift; sourceTree = "<group>"; };
+		427EB99B243BBF680040D424 /* SCNPointCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNPointCloud.swift; sourceTree = "<group>"; };
+		427EB99C243BBF680040D424 /* AxisGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxisGrid.swift; sourceTree = "<group>"; };
+		427EB99D243BBF680040D424 /* Haptics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		427EB9A0243BBF680040D424 /* SKLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLine.swift; sourceTree = "<group>"; };
+		427EB9A1243BBF680040D424 /* SCNVector4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector4+Extensions.swift"; sourceTree = "<group>"; };
+		427EB9A2243BBF680040D424 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +83,35 @@
 			isa = PBXGroup;
 			children = (
 				427EB963243BAA120040D424 /* AppDelegate.swift */,
-				427EB965243BAA120040D424 /* art.scnassets */,
 				427EB967243BAA120040D424 /* ViewController.swift */,
+				427EB979243BAB520040D424 /* ARBodyUtils.swift */,
+				427EB977243BAA2D0040D424 /* VideoRecorder.swift */,
+				427EB992243BBF680040D424 /* SceneKit */,
 				427EB969243BAA120040D424 /* Main.storyboard */,
 				427EB96C243BAA150040D424 /* Assets.xcassets */,
 				427EB96E243BAA150040D424 /* LaunchScreen.storyboard */,
 				427EB971243BAA150040D424 /* Info.plist */,
 			);
 			path = ARBodyPoseRecorder;
+			sourceTree = "<group>";
+		};
+		427EB992243BBF680040D424 /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				427EB994243BBF680040D424 /* ProjectionUtils.swift */,
+				427EB995243BBF680040D424 /* SCNVector3+Extensions.swift */,
+				427EB997243BBF680040D424 /* float4x4+Extensions.swift */,
+				427EB998243BBF680040D424 /* CG+Arithmetic.swift */,
+				427EB999243BBF680040D424 /* ARPointCloudSimple.swift */,
+				427EB99A243BBF680040D424 /* UsefulExtensions.swift */,
+				427EB99B243BBF680040D424 /* SCNPointCloud.swift */,
+				427EB99C243BBF680040D424 /* AxisGrid.swift */,
+				427EB99D243BBF680040D424 /* Haptics.swift */,
+				427EB9A0243BBF680040D424 /* SKLine.swift */,
+				427EB9A1243BBF680040D424 /* SCNVector4+Extensions.swift */,
+				427EB9A2243BBF680040D424 /* SCNNode+Extensions.swift */,
+			);
+			path = SceneKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427EB966243BAA120040D424 /* art.scnassets in Resources */,
 				427EB970243BAA150040D424 /* LaunchScreen.storyboard in Resources */,
 				427EB96D243BAA150040D424 /* Assets.xcassets in Resources */,
 				427EB96B243BAA120040D424 /* Main.storyboard in Resources */,
@@ -139,8 +185,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427EB9AC243BBF680040D424 /* AxisGrid.swift in Sources */,
 				427EB968243BAA120040D424 /* ViewController.swift in Sources */,
+				427EB9A5243BBF680040D424 /* SCNVector3+Extensions.swift in Sources */,
+				427EB9A4243BBF680040D424 /* ProjectionUtils.swift in Sources */,
+				427EB9AB243BBF680040D424 /* SCNPointCloud.swift in Sources */,
+				427EB9B1243BBF680040D424 /* SCNNode+Extensions.swift in Sources */,
+				427EB9A7243BBF680040D424 /* float4x4+Extensions.swift in Sources */,
 				427EB964243BAA120040D424 /* AppDelegate.swift in Sources */,
+				427EB9AD243BBF680040D424 /* Haptics.swift in Sources */,
+				427EB9AF243BBF680040D424 /* SKLine.swift in Sources */,
+				427EB9AA243BBF680040D424 /* UsefulExtensions.swift in Sources */,
+				427EB9A8243BBF680040D424 /* CG+Arithmetic.swift in Sources */,
+				427EB9B0243BBF680040D424 /* SCNVector4+Extensions.swift in Sources */,
+				427EB9A9243BBF680040D424 /* ARPointCloudSimple.swift in Sources */,
+				427EB97A243BAB520040D424 /* ARBodyUtils.swift in Sources */,
+				427EB978243BAA2D0040D424 /* VideoRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34FWY7G2HB;
 				INFOPLIST_FILE = ARBodyPoseRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34FWY7G2HB;
 				INFOPLIST_FILE = ARBodyPoseRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
